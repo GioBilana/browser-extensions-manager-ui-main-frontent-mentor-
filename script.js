@@ -78,3 +78,14 @@ themeToggle.addEventListener("click", () => {
     themeIcon.alt = "moon";
   }
 });
+
+// remove btn
+
+document.querySelectorAll(".RemoveBtn").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const devLens = this.closest(".DevLens");
+    if (devLens) {
+      devLens.remove();
+    }
+  });
+});
